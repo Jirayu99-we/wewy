@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+}
+
+body {
+  background: #f7f2de;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* หัวข้อ */
+header {
+  background: #ff3c2c;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem); /* responsive */
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  box-shadow: 3px 3px 0px #000;
+}
+
+header p {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+}
+
+/* ส่วนโปรไฟล์ */
+.profile-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.profile-pic {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.profile-pic img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.info {
+  flex: 2 1 400px;
+  background: #fff5d7;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 0px #000;
+}
+
+.info h2 {
+  font-size: 1.2rem;
+  background: #ffcc00;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.colors .color-list {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #444;
+}
+
+.black { background: #000; }
+.white { background: #fff; }
+.blue { background: #2d7eff; }
+
+/* ส่วนซ้าย */
+.extra {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  flex: 1 1 250px;
+  background: #fff5d7;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 0px #000;
+}
+
+.box h2 {
+  font-size: 1.2rem;
+  background: #ffcc00;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 992px) {
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  .info, .box {
+    padding: 15px;
+  }
+  .color {
+    width: 25px;
+    height: 25px;
+  }
+}

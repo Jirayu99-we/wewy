@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6ef;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 20vh;
+  }
+  
+  .main-text {
+    font-size: 80px;
+    color: #f44336;
+    font-family: 'Segoe UI', cursive;
+    transform: rotate(-5deg);
+    margin: 0;
+  }
+  
+  .school {
+    font-size: 16px;
+    color: #b85c2f;
+    margin-top: 10px;
+    font-family: 'Courier New', cursive;
+  }
+  
+  .icon-box {
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  .icon-box:hover {
+    transform: scale(1.1);
+  }
+  
+  .icon-box img {
+    width: 40px;
+    height: 40px;
+  }
